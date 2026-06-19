@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 import {
   Trophy,
@@ -16,64 +17,76 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <main className="bg-black text-white min-h-screen">
 
-      {/* NAVBAR */}
-      <nav className="bg-[#03142e] border-b border-blue-900">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-0">
+{/* NAVBAR */}
+<nav className="bg-[#03142e] border-b border-blue-900">
+  <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-0">
 
-          <div className="flex items-center gap-4">
-  <Image
-    src="/logo.png"
-    alt="Tiger Shark Logo"
-    width={220}
-    height={220}
-    className="object-contain"
-  />
+    {/* LOGO */}
+    <div className="flex items-center gap-3">
+      <Image
+        src="/logo.png"
+        alt="Tiger Shark Logo"
+        width={120}
+        height={120}
+        className="object-contain md:w-[220px]"
+      />
 
-  <Image
-    src="/tiger-shark-text.png"
-    alt="Tiger Shark Aquatic"
-    width={280}
-    height={90}
-    className="hidden md:block object-contain"
-  />
-</div>
+      <Image
+        src="/tiger-shark-text.png"
+        alt="Tiger Shark Aquatic"
+        width={280}
+        height={90}
+        className="hidden md:block object-contain"
+      />
+    </div>
 
-          <div className="hidden md:flex gap-8 text-white">
-            <a href="#">Home</a>
-            <Link href="/about">About</Link>
-            <a href="#">Programs</a>
-            <a href="#">Camp</a>
-            <Link
-  href="/gallery"
-  className="hover:text-sky-400 transition"
->
-  Gallery
-</Link>
-            <a href="#">Contact</a>
-          </div>
+    {/* DESKTOP MENU */}
+    <div className="hidden md:flex gap-8 text-white items-center">
+      <a href="#">Home</a>
+      <Link href="/about">About</Link>
+      <a href="#">Programs</a>
+      <a href="#">Camp</a>
 
-          <div className="flex items-center gap-4">
-  <Link href="/register" className="hidden md:block">
-    <button className="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold">
-      Register Now
-    </button>
-  </Link>
+      <Link
+        href="/gallery"
+        className="hover:text-sky-400 transition"
+      >
+        Gallery
+      </Link>
 
-  <button
-    className="md:hidden text-white text-3xl"
-    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-  >
-    ☰
-  </button>
-</div>
-        </div>
-      </nav>
+      <a href="#">Contact</a>
+    </div>
 
-      {mobileMenuOpen && (
+    {/* RIGHT SIDE */}
+    <div className="flex items-center gap-4">
+
+      {/* Desktop Register Button */}
+      <Link
+        href="/register"
+        className="hidden md:block"
+      >
+        <button className="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold">
+          Register Now
+        </button>
+      </Link>
+
+      {/* Mobile Hamburger */}
+      <button
+        className="md:hidden text-white text-3xl"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      >
+        {mobileMenuOpen ? "✕" : "☰"}
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+{/* MOBILE MENU */}
+{mobileMenuOpen && (
   <div className="md:hidden bg-[#03142e] border-b border-blue-900">
     <div className="flex flex-col gap-4 p-6 text-white">
 
