@@ -96,37 +96,6 @@ export default function AboutPage() {
 
           <div className="bg-slate-900 p-6 rounded-xl">
   <h3 className="text-sky-400 text-xl font-bold mb-6">
-    National Achievements
-  </h3>
-
-  <div className="space-y-4">
-
-    <div className="flex gap-3 items-start">
-      <Trophy className="text-sky-400 mt-1" size={20} />
-      <p>National Record Holder – 800m Freestyle (Short Course)</p>
-    </div>
-
-    <div className="flex gap-3 items-start">
-      <Trophy className="text-sky-400 mt-1" size={20} />
-      <p>National Record Holder – 5km Open Water Swimming</p>
-    </div>
-
-    <div className="flex gap-3 items-start">
-      <Trophy className="text-sky-400 mt-1" size={20} />
-      <p>Multiple Sri Lanka National Championship Titles</p>
-    </div>
-
-    <div className="flex gap-3 items-start">
-      <Medal className="text-sky-400 mt-1" size={20} />
-      <p>South Asian Games 2019 – Two Silver Medals</p>
-    </div>
-
-  </div>
-</div>
-
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-  <h3 className="text-sky-400 text-xl font-bold mb-6">
     World Championships
   </h3>
 
@@ -154,8 +123,32 @@ export default function AboutPage() {
 
   </div>
 </div>
+<div className="bg-slate-900 p-6 rounded-xl">
+  <h3 className="text-sky-400 text-xl font-bold mb-6">
+    Leadership
+  </h3>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
+  <div className="space-y-4">
+
+    <div className="flex gap-3 items-start">
+      <Flag className="text-sky-400 mt-1" size={20} />
+      <p>Sri Lanka Team Captain – Singapore National Championships 2023</p>
+    </div>
+
+    <div className="flex gap-3 items-start">
+      <Flag className="text-sky-400 mt-1" size={20} />
+      <p>Sri Lanka Team Captain – Malaysia International Age Group Championships 2018</p>
+    </div>
+
+    <div className="flex gap-3 items-start">
+      <Flag className="text-sky-400 mt-1" size={20} />
+      <p>Team Sri Lanka Captain – Lifesaving World Championships 2024</p>
+    </div>
+
+  </div>
+</div>
+
+<div className="bg-slate-900 p-6 rounded-xl">
   <h3 className="text-sky-400 text-xl font-bold mb-6">
     Medals & Coaching
   </h3>
