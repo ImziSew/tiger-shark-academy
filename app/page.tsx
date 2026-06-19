@@ -39,7 +39,7 @@ export default function Home() {
   />
 </div>
 
-          <div className="hidden md:flex gap-8 text-white">
+          <div className="flex gap-8 text-white">
             <a href="#">Home</a>
             <Link href="/about">About</Link>
             <a href="#">Programs</a>
