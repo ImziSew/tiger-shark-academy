@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 
 
@@ -8,6 +8,8 @@ export default function AdminPage() {
   const [registrations, setRegistrations] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const [authenticated, setAuthenticated] = useState(false);
+const [password, setPassword] = useState("");
 
   useEffect(() => {
     fetchRegistrations();
@@ -72,6 +74,39 @@ export default function AdminPage() {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+}
+
+if (!authenticated) {
+  return (
+    <main className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="bg-slate-900 p-8 rounded-xl w-full max-w-md">
+        <h1 className="text-3xl font-bold mb-6">
+          Admin Login
+        </h1>
+
+        <input
+          type="password"
+          placeholder="Enter Admin Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 mb-4"
+        />
+
+        <button
+          onClick={() => {
+            if (password === "TigerShark2026!") {
+              setAuthenticated(true);
+            } else {
+              alert("Incorrect password");
+            }
+          }}
+          className="bg-sky-500 hover:bg-sky-600 w-full py-3 rounded-lg font-semibold"
+        >
+          Login
+        </button>
+      </div>
+    </main>
+  );
 }
 
   return (
