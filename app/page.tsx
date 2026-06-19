@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import {
   Trophy,
@@ -14,6 +15,8 @@ import {
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <main className="bg-black text-white min-h-screen">
 
@@ -39,7 +42,7 @@ export default function Home() {
   />
 </div>
 
-          <div className="flex gap-8 text-white">
+          <div className="hidden md:flex gap-8 text-white">
             <a href="#">Home</a>
             <Link href="/about">About</Link>
             <a href="#">Programs</a>
@@ -53,13 +56,48 @@ export default function Home() {
             <a href="#">Contact</a>
           </div>
 
-          <Link href="/register">
-            <button className="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold">
-              Register Now
-            </button>
-          </Link>
+          <div className="flex items-center gap-4">
+  <Link href="/register" className="hidden md:block">
+    <button className="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold">
+      Register Now
+    </button>
+  </Link>
+
+  <button
+    className="md:hidden text-white text-3xl"
+    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+  >
+    ☰
+  </button>
+</div>
         </div>
       </nav>
+
+      {mobileMenuOpen && (
+  <div className="md:hidden bg-[#03142e] border-b border-blue-900">
+    <div className="flex flex-col gap-4 p-6 text-white">
+
+      <a href="#">Home</a>
+
+      <Link href="/about">About</Link>
+
+      <a href="#">Programs</a>
+
+      <a href="#">Camp</a>
+
+      <Link href="/gallery">Gallery</Link>
+
+      <a href="#">Contact</a>
+
+      <Link href="/register">
+        <button className="bg-sky-500 w-full py-3 rounded-lg font-semibold">
+          Register Now
+        </button>
+      </Link>
+
+    </div>
+  </div>
+)}
 
       {/* HERO */}
 <section className="max-w-7xl mx-auto px-6 py-8">
