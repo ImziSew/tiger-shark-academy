@@ -39,8 +39,8 @@ export default function Home() {
       <Image
   src="/tiger-shark-text.png"
   alt="Tiger Shark Aquatic"
-  width={380}
-  height={170}
+  width={500}
+  height={380}
   className="object-contain w-[140px] md:w-[280px]"
 />
     </div>
