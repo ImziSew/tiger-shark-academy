@@ -146,9 +146,11 @@ export default function Home() {
           </button>
         </Link>
 
-        <button className="border border-sky-500 hover:bg-sky-500/10 px-8 py-4 rounded-lg transition">
-          ONLINE COACHING
-        </button>
+        <Link href="/online-coaching">
+  <button className="border border-sky-500 hover:bg-sky-500/10 px-8 py-4 rounded-lg transition">
+    ONLINE COACHING
+  </button>
+</Link>
 
       </div>
 
