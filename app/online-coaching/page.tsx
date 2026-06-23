@@ -29,7 +29,7 @@ export default function OnlineCoachingPage() {
       </section>
 
       {/* ONLINE COACHING DETAILS */}
-<section className="max-w-7xl mx-auto px-6 py-20">
+<section className="max-w-7xl mx-auto px-0 py-20">
 
   <h2 className="text-5xl font-bold text-center mb-16">
     Online Coaching Program
