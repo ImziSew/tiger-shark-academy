@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Trophy } from "lucide-react";
 
 export default function OnlineCoachingPage() {
   return (
@@ -9,10 +10,10 @@ export default function OnlineCoachingPage() {
 
         <div className="text-center">
 
-          <div className="inline-block bg-green-500 text-black px-5 py-2 rounded-full font-bold mb-6">
-            🎉 20% OFF FOR NEW ATHLETES
-          </div>
-
+<div className="inline-flex items-center gap-3 bg-sky-500/20 border border-sky-400 text-sky-300 font-bold px-8 py-4 rounded-full">
+  <Trophy size={22} />
+  <span>20% OFF FOR NEW ATHLETES</span>
+</div>
           <h1 className="text-5xl md:text-7xl font-black">
             ONLINE
             <span className="text-sky-500"> COACHING</span>
@@ -27,74 +28,74 @@ export default function OnlineCoachingPage() {
 
       </section>
 
-      {/* SERVICES */}
-      <section className="max-w-7xl mx-auto px-6 pb-20">
+      {/* ONLINE COACHING DETAILS */}
+<section className="max-w-7xl mx-auto px-6 py-20">
 
-        <h2 className="text-4xl font-bold text-center mb-12">
-          What We Offer
-        </h2>
+  <h2 className="text-5xl font-bold text-center mb-16">
+    Online Coaching Program
+  </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+  <div className="grid lg:grid-cols-3 gap-8">
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Beginner Swimmers
-          </div>
+    {/* WHO WE COACH */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+      <h3 className="text-2xl font-bold text-sky-400 mb-6">
+        Who We Coach
+      </h3>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Intermediate Swimmers
-          </div>
+      <div className="space-y-4 text-lg">
+        <p>✓ Beginner Swimmers</p>
+        <p>✓ Intermediate Swimmers</p>
+        <p>✓ Competitive Swimmers</p>
+        <p>✓ Open Water Swimmers</p>
+        <p>✓ Special Needs Athletes</p>
+        <p>✓ Masters Swimmers</p>
+        <p>✓ Triathletes</p>
+        <p>✓ Athletes Preparing for Competitions</p>
+      </div>
+    </div>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Competitive Swimmers
-          </div>
+    {/* WHAT YOU RECEIVE */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+      <h3 className="text-2xl font-bold text-sky-400 mb-6">
+        What You Receive
+      </h3>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Open Water Swimmers
-          </div>
+      <div className="space-y-4 text-lg">
+        <p>✓ 1-on-1 Live Coaching Sessions</p>
+        <p>✓ Personalized Training Plans</p>
+        <p>✓ Stroke Technique Analysis</p>
+        <p>✓ Video Review & Feedback</p>
+        <p>✓ Race Strategy Development</p>
+        <p>✓ Open Water Training Guidance</p>
+        <p>✓ Dryland Strength Programs</p>
+        <p>✓ Nutrition Support</p>
+        <p>✓ Mental Preparation & Confidence Building</p>
+        <p>✓ Goal Setting & Progress Tracking</p>
+      </div>
+    </div>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Special Needs Athletes
-          </div>
+    {/* WHY CHOOSE US */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+      <h3 className="text-2xl font-bold text-sky-400 mb-6">
+        Why Choose Tiger Shark
+      </h3>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Personalized Training Plans
-          </div>
+      <div className="space-y-4 text-lg">
+        <p>✓ World Championship Athlete</p>
+        <p>✓ Sri Lanka National Record Holder</p>
+        <p>✓ South Asian Games Medalist</p>
+        <p>✓ International Coaching Experience</p>
+        <p>✓ Coaching for All Skill Levels</p>
+        <p>✓ Flexible Online Sessions</p>
+        <p>✓ Direct WhatsApp Support</p>
+        <p>✓ Personalized Athlete Development</p>
+        <p>✓ Proven Competitive Results</p>
+      </div>
+    </div>
 
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Stroke Technique Analysis
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Nutrition Guidance
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Mental Preparation
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Motivation & Goal Setting
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Dryland Strength Training
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Balance & Coordination Development
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Race Strategy Planning
-          </div>
-
-          <div className="bg-slate-900 p-6 rounded-xl">
-            ✓ Video Analysis & Feedback
-          </div>
-
-        </div>
-
-      </section>
+  </div>
+</section>
 
       {/* PRICING */}
       <section className="max-w-7xl mx-auto px-6 pb-20">
