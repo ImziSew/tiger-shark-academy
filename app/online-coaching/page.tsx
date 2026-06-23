@@ -11,7 +11,7 @@ export default function OnlineCoachingPage() {
         <div className="text-center">
 
 <div className="inline-flex items-center gap-3 bg-sky-500/20 border border-sky-400 text-sky-300 font-bold px-8 py-4 rounded-full">
-  <Trophy size={22} />
+  <Trophy size={44} />
   <span>20% OFF FOR NEW ATHLETES</span>
 </div>
           <h1 className="text-5xl md:text-7xl font-black">
@@ -29,9 +29,9 @@ export default function OnlineCoachingPage() {
       </section>
 
       {/* ONLINE COACHING DETAILS */}
-<section className="max-w-7xl mx-auto px-0 py-20">
+<section className="max-w-7xl mx-auto px-0 py-5">
 
-  <h2 className="text-5xl font-bold text-center mb-16">
+  <h2 className="text-5xl font-bold text-center mb-6">
     Online Coaching Program
   </h2>
 
