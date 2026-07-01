@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
     import {
   Trophy,
@@ -13,6 +14,38 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black text-white">
 
+      {/* HEADER */}
+<header className="bg-[#03142e] border-b border-blue-900">
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <div className="flex items-center gap-4">
+      <Image
+        src="/logo.png"
+        alt="Tiger Shark Logo"
+        width={70}
+        height={70}
+      />
+
+      <div>
+        <h1 className="text-3xl font-bold text-white">
+          Tiger Shark Aquatic Academy
+        </h1>
+
+        <p className="text-sky-400">
+          About the Academy
+        </p>
+      </div>
+    </div>
+
+    <Link
+      href="/"
+      className="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold transition"
+    >
+      Back Home
+    </Link>
+
+  </div>
+</header>
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
