@@ -21,7 +21,9 @@ export const metadata = {
     "Professional swimming coaching, camps, online coaching, and athlete development.",
   icons: {
     icon: "/logo.png",
+  }
 };
+
 
 export default function RootLayout({
   children,
