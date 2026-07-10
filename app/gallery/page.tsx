@@ -2,11 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ReactNode } from "react";
+import {
+  Sparkles,
+  Trophy,
+  Globe,
+  Newspaper,
+} from "lucide-react";
 
 const featured = [
   "/galleryline33.jpeg",
   "/galleryline34.jpeg",
-  ];
+];
 
 const competition = [
   "/galleryline11.jpeg",
@@ -36,32 +43,40 @@ const media = [
 function GalleryGrid({
   title,
   images,
+  icon,
 }: {
   title: string;
   images: string[];
+  icon: ReactNode;
 }) {
   return (
     <section className="mb-20">
-      <h2 className="text-3xl font-bold mb-8 text-sky-400">
-        {title}
-      </h2>
+
+      <div className="flex items-center gap-4 mb-8">
+        {icon}
+
+        <h2 className="text-3xl md:text-4xl font-bold text-sky-400">
+          {title}
+        </h2>
+      </div>
 
       <div className="columns-1 md:columns-3 gap-6 space-y-6">
-  {images.map((img) => (
-    <div
-      key={img}
-      className="mb-6 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 break-inside-avoid"
-    >
-      <Image
-        src={img}
-        alt={title}
-        width={1200}
-        height={900}
-        className="w-full h-auto hover:scale-105 transition duration-500"
-      />
-    </div>
-  ))}
-</div>
+        {images.map((img) => (
+          <div
+            key={img}
+            className="mb-6 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 break-inside-avoid"
+          >
+            <Image
+              src={img}
+              alt={title}
+              width={1200}
+              height={900}
+              className="w-full h-auto hover:scale-105 transition duration-500"
+            />
+          </div>
+        ))}
+      </div>
+
     </section>
   );
 }
@@ -79,7 +94,7 @@ export default function GalleryPage() {
               src="/logo.png"
               alt="Tiger Shark Academy"
               width={80}
-              height={80} 
+              height={80}
             />
 
             <div>
@@ -105,6 +120,7 @@ export default function GalleryPage() {
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 py-16 text-center">
+
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
           Gallery
         </h1>
@@ -114,28 +130,33 @@ export default function GalleryPage() {
           world championships, national records,
           training experiences and career milestones.
         </p>
+
       </section>
 
       <div className="max-w-7xl mx-auto px-6 pb-20">
 
         <GalleryGrid
-          title="⭐ Featured Highlights"
+          title="Featured Highlights"
           images={featured}
+          icon={<Sparkles className="text-sky-400" size={36} />}
         />
 
         <GalleryGrid
-          title="🏊 Competition Highlights"
+          title="Competition Highlights"
           images={competition}
+          icon={<Trophy className="text-yellow-400" size={36} />}
         />
 
         <GalleryGrid
-          title="🌎 International Experience"
+          title="International Experience"
           images={international}
+          icon={<Globe className="text-sky-400" size={36} />}
         />
 
         <GalleryGrid
-          title="📰 Media Coverage & Recognition"
+          title="Media Coverage & Recognition"
           images={media}
+          icon={<Newspaper className="text-sky-400" size={36} />}
         />
 
       </div>
