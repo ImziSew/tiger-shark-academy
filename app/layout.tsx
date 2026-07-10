@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Tiger Shark Aquatic Academy",
     template: "%s | Tiger Shark Aquatic Academy",
@@ -21,7 +21,9 @@ export const metadata = {
     "Professional swimming coaching, camps, online coaching, and athlete development.",
   icons: {
     icon: "/logo.png",
-  }
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 
