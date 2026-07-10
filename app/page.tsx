@@ -49,7 +49,7 @@ export default function Home() {
     <div className="hidden md:flex gap-8 text-white items-center">
       <a href="#">Home</a>
       <Link href="/about">About</Link>
-      <a href="#">Programs</a>
+      <Link href="/programs">Programs</Link>
       <a href="#">Camp</a>
       <Link
         href="/gallery"
