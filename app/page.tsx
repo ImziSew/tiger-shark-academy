@@ -51,7 +51,6 @@ export default function Home() {
       <Link href="/about">About</Link>
       <a href="#">Programs</a>
       <a href="#">Camp</a>
-
       <Link
         href="/gallery"
         className="hover:text-sky-400 transition"
@@ -145,12 +144,6 @@ export default function Home() {
             REGISTER FOR CAMP
           </button>
         </Link>
-
-        <Link href="/online-coaching">
-  <button className="border border-sky-500 hover:bg-sky-500/10 px-8 py-4 rounded-lg transition">
-    ONLINE COACHING
-  </button>
-</Link>
 
       </div>
 
