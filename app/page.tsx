@@ -95,7 +95,7 @@ export default function Home() {
 
       <Link href="/about">About</Link>
 
-      <a href="#">Programs</a>
+      <Link href="/programs">Programs</Link>
 
       <a href="#">Camp</a>
 
