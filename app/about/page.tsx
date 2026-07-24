@@ -214,37 +214,161 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CO-COACHES */}
-<section className="max-w-7xl mx-auto px-6 py-16">
+{/* COACHING TEAM */}
+<section className="max-w-7xl mx-auto px-6 py-20">
 
-  <div className="text-center mb-12">
+  <div className="text-center mb-14">
 
-    <p className="text-sky-400 uppercase font-bold tracking-wider">
+    <p className="text-sky-400 uppercase font-bold tracking-widest">
       Coaching Team
     </p>
 
-    <h2 className="text-5xl font-bold mt-2">
-      Meet Our Co-Coaches
+    <h2 className="text-5xl font-bold mt-3">
+      Meet Our Coaches
     </h2>
 
-    <p className="text-gray-400 text-lg mt-4 max-w-3xl mx-auto">
-      Tiger Shark Aquatic Academy is supported by a passionate team of
-      qualified coaches and national athletes who bring years of
-      competitive experience, leadership, and professional coaching to
-      every training camp.
+    <p className="text-gray-400 text-lg max-w-3xl mx-auto mt-5">
+      Tiger Shark Aquatic Academy is supported by experienced swimmers,
+      certified coaches, and dedicated mentors who are passionate about
+      developing the next generation of athletes.
     </p>
 
   </div>
 
-  <div className="bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden shadow-xl">
+  <div className="grid lg:grid-cols-2 gap-8">
 
-    <Image
-      src="/cocoaches.jpeg"
-      alt="Tiger Shark Aquatic Academy Coaching Team"
-      width={1200}
-      height={1700}
-      className="w-full h-auto"
-    />
+    {/* Coach 1 */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+
+      <div className="flex gap-6">
+
+        <div className="w-36 h-44 rounded-xl bg-slate-800 flex items-center justify-center text-gray-500 text-sm">
+          Photo
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold text-sky-400">
+            Nileesha Deshanjana
+          </h3>
+
+          <p className="text-gray-400 mb-5">
+            Senior Coach
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>• National Swimmer</li>
+            <li>• ASCA Level 1 & Level 2 Certified Coach</li>
+            <li>• Former Assistant Coach – Ananda College</li>
+            <li>• Present Assistant Coach – Nalanda College</li>
+            <li>• Represented Sri Lanka at the 2016 South Asian Aquatic Championships</li>
+            <li>• Sri Lanka Lifesaving Bronze Medalist</li>
+            <li>• National Medalist</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Coach 2 */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+
+      <div className="flex gap-6">
+
+        <div className="w-36 h-44 rounded-xl bg-slate-800 flex items-center justify-center text-gray-500 text-sm">
+          Photo
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold text-sky-400">
+            Senal Pathirana
+          </h3>
+
+          <p className="text-gray-400 mb-5">
+            Intermediate Coach
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>• National Swimmer</li>
+            <li>• Former Head Prefect – Ananda College</li>
+            <li>• Vice Captain – Ananda Swimming Team (2025)</li>
+            <li>• Sri Lanka Lifesaving Bronze Medalist</li>
+            <li>• Represented Sri Lanka at the 2024 World Championships (Australia)</li>
+            <li>• Sri Lanka U-19 Team Vice Captain</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Coach 3 */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+
+      <div className="flex gap-6">
+
+        <div className="w-36 h-44 rounded-xl bg-slate-800 flex items-center justify-center text-gray-500 text-sm">
+          Photo
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold text-sky-400">
+            Meedum Mendis
+          </h3>
+
+          <p className="text-gray-400 mb-5">
+            Performance Coach
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>• National Swimmer</li>
+            <li>• Sri Lanka Lifesaving Commonwealth Gold Medalist</li>
+            <li>• Competitive Athlete</li>
+            <li>• Former Student – Ananda College, Colombo</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Coach 4 */}
+    <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+
+      <div className="flex gap-6">
+
+        <div className="w-36 h-44 rounded-xl bg-slate-800 flex items-center justify-center text-gray-500 text-sm">
+          Photo
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold text-sky-400">
+            Gayan Madusanka
+          </h3>
+
+          <p className="text-gray-400 mb-5">
+            Assistant Coach
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>• Trinity College Assistant Coach</li>
+            <li>• Sri Lanka Lifesaving Bronze Medalist</li>
+            <li>• ASCA Level 1 Certified Coach</li>
+            <li>• ASCA Level 2 Certified Coach</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
