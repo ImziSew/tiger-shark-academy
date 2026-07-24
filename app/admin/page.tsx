@@ -10,6 +10,7 @@ export default function AdminPage() {
   const [search, setSearch] = useState("");
   const [authenticated, setAuthenticated] = useState(false);
 const [password, setPassword] = useState("");
+const [selectedCamp, setSelectedCamp] = useState("All");
 
   useEffect(() => {
     fetchRegistrations();
@@ -31,6 +32,15 @@ const [password, setPassword] = useState("");
   }
 
   function exportCSV() {
+
+  const filtered =
+    selectedCamp === "All"
+      ? registrations
+      : selectedCamp === "Unassigned"
+      ? registrations.filter((r) => !r.camp_location)
+      : registrations.filter(
+          (r) => r.camp_location === selectedCamp
+        );
   const headers = [
     "Name",
     "Age",
@@ -43,7 +53,7 @@ const [password, setPassword] = useState("");
     "Emergency Contact",
   ];
 
-  const rows = registrations.map((reg) => [
+  const rows = filtered.map((reg) => [
     reg.athlete_name,
     reg.age,
     reg.gender,
@@ -68,9 +78,9 @@ const [password, setPassword] = useState("");
 
   const link = document.createElement("a");
   link.href = url;
-  link.download = `registrations-${new Date()
-  .toISOString()
-  .split("T")[0]}.csv`;
+  link.download = `${selectedCamp}-registrations-${
+  new Date().toISOString().split("T")[0]
+}.csv`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -124,12 +134,28 @@ if (!authenticated) {
           </p>
         </div>
 
-        <button
-  onClick={exportCSV}
-  className="bg-sky-500 hover:bg-sky-600 px-5 py-3 rounded-lg font-semibold"
->
-  Export CSV
-</button>
+  <div className="flex gap-3">
+
+  <select
+    value={selectedCamp}
+    onChange={(e) => setSelectedCamp(e.target.value)}
+    className="bg-slate-900 border border-slate-700 rounded-lg px-4 py-3"
+  >
+    <option value="All">All Camps</option>
+    <option value="Colombo">Colombo</option>
+    <option value="Kandy">Kandy</option>
+    <option value="Matara">Matara</option>
+    <option value="Unassigned">Unassigned</option>
+  </select>
+
+  <button
+    onClick={exportCSV}
+    className="bg-sky-500 hover:bg-sky-600 px-5 py-3 rounded-lg font-semibold"
+  >
+    Export CSV
+  </button>
+
+</div>
       </div>
 
       <input
