@@ -278,15 +278,15 @@ const handleSubmit = async (e: React.FormEvent) => {
               <div className="space-y-2 text-gray-300">
 
                 <p>
-                  <strong>Account Name:</strong> B D Shehan
+                  <strong>Account Name:</strong> Dilanka Shehan
                 </p>
 
                 <p>
-                  <strong>Account Number:</strong> 74790949
+                  <strong>Account Number:</strong> 8002756802
                 </p>
 
                 <p>
-                  <strong>Bank Name:</strong> Bank Of Ceylon
+                  <strong>Bank Name:</strong> Commercial Bank of Ceylon
                 </p>
 
                 <p>

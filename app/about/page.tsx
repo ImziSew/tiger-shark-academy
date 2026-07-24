@@ -214,6 +214,42 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* CO-COACHES */}
+<section className="max-w-7xl mx-auto px-6 py-16">
+
+  <div className="text-center mb-12">
+
+    <p className="text-sky-400 uppercase font-bold tracking-wider">
+      Coaching Team
+    </p>
+
+    <h2 className="text-5xl font-bold mt-2">
+      Meet Our Co-Coaches
+    </h2>
+
+    <p className="text-gray-400 text-lg mt-4 max-w-3xl mx-auto">
+      Tiger Shark Aquatic Academy is supported by a passionate team of
+      qualified coaches and national athletes who bring years of
+      competitive experience, leadership, and professional coaching to
+      every training camp.
+    </p>
+
+  </div>
+
+  <div className="bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden shadow-xl">
+
+    <Image
+      src="/cocoaches.jpeg"
+      alt="Tiger Shark Aquatic Academy Coaching Team"
+      width={1200}
+      height={1700}
+      className="w-full h-auto"
+    />
+
+  </div>
+
+</section>
+
       {/* WHY TRAIN */}
       <section className="max-w-7xl mx-auto px-6 py-16">
 
