@@ -110,7 +110,7 @@ export default function Home() {
       </Link>
 
     </div>
-  </div>
+  </div>s
 )}
 
       {/* HERO */}
@@ -296,7 +296,7 @@ export default function Home() {
 
             <div className="p-6">
               <h3 className="text-3xl font-bold">Colombo</h3>
-              <p className="mt-2">August 10</p>
+              <p className="mt-2">August 17</p>
 
               <Link href="/register">
                 <button className="mt-4 border border-sky-500 px-6 py-3 rounded-lg w-full">
@@ -318,7 +318,7 @@ export default function Home() {
 
             <div className="p-6">
               <h3 className="text-3xl font-bold">Kandy</h3>
-              <p className="mt-2">August 12</p>
+              <p className="mt-2">August 19</p>
 
               <Link href="/register">
                 <button className="mt-4 border border-sky-500 px-6 py-3 rounded-lg w-full">
@@ -340,7 +340,7 @@ export default function Home() {
 
             <div className="p-6">
               <h3 className="text-3xl font-bold">Matara</h3>
-              <p className="mt-2">August 14</p>
+              <p className="mt-2">August 25</p>
 
               <Link href="/register">
                 <button className="mt-4 border border-sky-500 px-6 py-3 rounded-lg w-full">
@@ -383,7 +383,7 @@ export default function Home() {
           Registration Deadline
         </p>
         <h3 className="text-sky-400 text-3xl font-bold mt-1">
-          July 15
+          August 15
         </h3>
       </div>
 
