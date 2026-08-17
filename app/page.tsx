@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-
 import {
+  Menu,
+  X,
   Trophy,
   Medal,
   Globe,
@@ -110,7 +110,7 @@ export default function Home() {
       </Link>
 
     </div>
-  </div>s
+  </div>
 )}
 
       {/* HERO */}
